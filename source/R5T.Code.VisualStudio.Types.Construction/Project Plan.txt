@@ -1,0 +1,4 @@
+R5T.Code.VisualStudio.Types.Construction - A construction console entry-point for the R5T.Code.VisualStudio.Types library (A library for Visual Studio base-types.).
+
+Goals
+

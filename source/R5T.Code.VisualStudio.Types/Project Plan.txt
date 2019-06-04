@@ -1,0 +1,4 @@
+R5T.Code.VisualStudio.Types - A library for Visual Studio base-types.
+
+Goals
+
