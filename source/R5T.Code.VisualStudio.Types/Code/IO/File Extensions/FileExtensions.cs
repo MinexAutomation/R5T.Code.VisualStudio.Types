@@ -6,11 +6,11 @@ namespace R5T.Code.VisualStudio.IO
     public static class FileExtensions
     {
         /// <summary>
-        /// The Visual Studio Solution file-extension.
+        /// The <see cref="SolutionFileExtension.Instance"/>.
         /// </summary>
-        public static readonly SolutionFileExtension Sln = SolutionFileExtension.Instance;
+        public static SolutionFileExtension Sln => SolutionFileExtension.Instance;
         /// <summary>
-        /// The Visual Studio C#-project file-extension.
+        /// The <see cref="CSharpProjectFileExtension.Instance"/>.
         /// </summary>
         public static readonly CSharpProjectFileExtension Csproj = CSharpProjectFileExtension.Instance;
     }
