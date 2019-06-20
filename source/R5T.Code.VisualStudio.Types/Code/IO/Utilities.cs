@@ -21,6 +21,12 @@ namespace R5T.Code.VisualStudio.IO
             return projectFilePath;
         }
 
+        public static ProjectFileName GetProjectFileName(ProjectFilePath projectFilePath)
+        {
+            var projectFileName = PathUtilities.GetFileName(projectFilePath).AsProjectFileName();
+            return projectFileName;
+        }
+
         /// <summary>
         /// The directory containing the project-file is the project-directory.
         /// </summary>
