@@ -3,6 +3,7 @@
 using R5T.NetStandard.IO.Paths;
 
 using PathUtilities = R5T.NetStandard.IO.Paths.Utilities;
+using PathUtilitiesExtra = R5T.NetStandard.IO.Paths.UtilitiesExtra;
 
 
 namespace R5T.Code.VisualStudio.IO
@@ -17,7 +18,7 @@ namespace R5T.Code.VisualStudio.IO
 
         public static ProjectFilePath GetProjectFilePath(ProjectDirectoryPath projectDirectoryPath, ProjectFileName projectFileName)
         {
-            var projectFilePath = PathUtilities.GetFilePath(projectDirectoryPath, projectFileName).AsProjectFilePath();
+            var projectFilePath = PathUtilitiesExtra.GetFilePath(projectDirectoryPath, projectFileName).AsProjectFilePath();
             return projectFilePath;
         }
 
@@ -44,7 +45,7 @@ namespace R5T.Code.VisualStudio.IO
 
         public static SolutionFilePath GetSolutionFilePath(SolutionDirectoryPath solutionDirectoryPath, SolutionFileName solutionFileName)
         {
-            var solutionFilePath = PathUtilities.GetFilePath(solutionDirectoryPath, solutionFileName).AsSolutionFilePath();
+            var solutionFilePath = PathUtilitiesExtra.GetFilePath(solutionDirectoryPath, solutionFileName).AsSolutionFilePath();
             return solutionFilePath;
         }
 
