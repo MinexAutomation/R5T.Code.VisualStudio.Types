@@ -1,6 +1,7 @@
 ﻿using System;
 
 using R5T.NetStandard.IO.Paths;
+using R5T.NetStandard.IO.Paths.Extensions;
 
 using PathUtilities = R5T.NetStandard.IO.Paths.Utilities;
 using PathUtilitiesExtra = R5T.NetStandard.IO.Paths.UtilitiesExtra;
@@ -10,6 +11,12 @@ namespace R5T.Code.VisualStudio.IO
 {
     public static class Utilities
     {
+        public static FileNameWithoutExtension GetProjectFileNameWithoutExtension(ProjectName projectName)
+        {
+            var projectFileNameWithoutExtension = projectName.Value.AsFileNameWithoutExtension();
+            return projectFileNameWithoutExtension;
+        }
+
         public static ProjectFileName GetCSharpProjectFileName(FileNameWithoutExtension projectfileNameWithoutExtension)
         {
             var projectFileName = PathUtilities.GetFileName(projectfileNameWithoutExtension, CSharpProjectFileExtension.Instance).AsProjectFileName();
