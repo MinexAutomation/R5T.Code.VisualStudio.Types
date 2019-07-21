@@ -4,7 +4,6 @@ using System.Xml;
 using R5T.Code.VisualStudio.Extensions;
 using R5T.Code.VisualStudio.IO;
 using R5T.NetStandard;
-using R5T.NetStandard.IO.Paths;
 
 using PathUtilities = R5T.NetStandard.IO.Paths.Utilities;
 
