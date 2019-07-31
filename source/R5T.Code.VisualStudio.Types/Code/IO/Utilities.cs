@@ -73,5 +73,11 @@ namespace R5T.Code.VisualStudio.IO
             var solutionDirectoryPath = PathUtilities.GetDirectoryPath(solutionFilePath).AsSolutionDirectoryPath();
             return solutionDirectoryPath;
         }
+
+        public static FilePath GetDirectoryBuildPropsFilePath(ProjectDirectoryPath projectDirectoryPath)
+        {
+            var directoryBuildPropsFilePath = PathUtilities.Combine(projectDirectoryPath.Value, Constants.DirectoryBuildPropsFileName.Value).AsFilePath();
+            return directoryBuildPropsFilePath;
+        }
     }
 }
